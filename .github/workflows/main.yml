@@ -64,7 +64,7 @@ jobs:
           script: |
             sudo apt-get update -y
             sudo apt-get install docker.io -y
-            docker pull ritviksrao/python-demoapp-cicd:latest
-            docker stop python-app || true
-            docker rm python-app || true
-            docker run -d -p 5000:5000 --name python-app ritviksrao/python-demoapp-cicd:latest
+            sudo docker pull ritviksrao/python-demoapp-cicd:latest
+            sudo docker stop python-app || true
+            sudo docker rm python-app || true
+            sudo docker run -d -p 5000:5000 --name python-app ritviksrao/python-demoapp-cicd:latest
