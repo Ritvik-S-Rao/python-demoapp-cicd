@@ -62,6 +62,8 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
+            sudo apt-get update -y
+            sudo apt-get install docker.io -y
             docker pull ritviksrao/python-demoapp-cicd:latest
             docker stop python-app || true
             docker rm python-app || true
