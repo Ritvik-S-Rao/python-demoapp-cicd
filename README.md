@@ -2,6 +2,9 @@
 
 This repository contains an end-to-end CI/CD pipeline for containerizing and deploying a legacy Python Flask application to AWS EC2 using GitHub Actions, Docker, and Terraform.
 
+##Architecture
+![CI/CD pipeline architecture](./docs/Architecture.png)
+
 ## 🙏 Acknowledgments
 A special thanks to [benc-uk](https://github.com/benc-uk) for providing the original base application: [benc-uk/python-demoapp](https://github.com/benc-uk/python-demoapp). This project builds upon their foundational work by introducing a robust Infrastructure as Code (IaC) setup and an automated deployment workflow.
 
